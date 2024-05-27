@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Documentation</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .method-card {
+            margin-bottom: 20px;
+        }
+        .method-card .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">API Documentación</h1>
+        <div class="card method-card">
+            <div class="card-header bg-primary text-white">
+                <span>GET /Usuarios</span>
+                <span class="badge badge-secondary">GET</span>
+            </div>
+            <div class="card-body">
+                <p>Recuperar una lista de usuarios.</p>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#getUsuarios" aria-expanded="false" aria-controls="getUsuarios">
+                    Ver Detalle
+                </button>
+                <div class="collapse" id="getUsuarios">
+                    <div class="mt-3">
+                        <pre>
+<a href="Usuarios">/Usuarios</a>
+GET /usuarios
+Host: https://apitecnoapps.onrender.com/
+
+                        </pre>
+                        <h5>Respuesta:</h5>
+                        <pre>
+[
+	{
+		"id": 1,
+		"nombre": "Juan Perez",
+		"email": "juan.perez@example.com",
+		"contraseña": "password123",
+		"rolId": 1,
+		"clienteId": 1
+	},
+	...
+]
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card method-card">
+            <div class="card-header bg-primary text-white">
+                <span>GET /Roles</span>
+                <span class="badge badge-secondary">GET</span>
+            </div>
+            <div class="card-body">
+                <p>Recuperar una lista de Roles.</p>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#getRoles" aria-expanded="false" aria-controls="getRoles">
+                    Ver Detalle
+                </button>
+                <div class="collapse" id="getRoles">
+                    <div class="mt-3">
+                        <pre>
+<a href="Roles">/Roles</a>
+GET /Roles
+Host: https://apitecnoapps.onrender.com/
+
+                        </pre>
+                        <h5>Respuesta:</h5>
+                        <pre>
+[
+	{
+		"id": 1,
+		"nombre": "Administrador"
+	},
+	...
+]
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card method-card">
+            <div class="card-header bg-primary text-white">
+                <span>GET /Clientes </span>
+                <span class="badge badge-secondary">GET</span>
+            </div>
+            <div class="card-body">
+                <p>Recuperar una lista de Clientes.</p>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#getClientes" aria-expanded="false" aria-controls="getClientes">
+                    Ver Detalle
+                </button>
+                <div class="collapse" id="getClientes">
+                    <div class="mt-3">
+                        <pre>
+<a href="Clientes">/Clientes </a>
+GET /Clientes 
+Host: https://apitecnoapps.onrender.com/
+
+                        </pre>
+                        <h5>Respuesta:</h5>
+                        <pre>
+[
+	{
+		"id": 1,
+		"nombre": "Cliente A",
+		"servicios": [
+		  1,
+		  2
+		],
+		"contactoId": 1
+	},
+	...
+]
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card method-card">
+            <div class="card-header bg-primary text-white">
+                <span>GET /Servicios </span>
+                <span class="badge badge-secondary">GET</span>
+            </div>
+            <div class="card-body">
+                <p>Recuperar una lista de Servicios.</p>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#getServicios" aria-expanded="false" aria-controls="getServicios">
+                    Ver Detalle
+                </button>
+                <div class="collapse" id="getServicios">
+                    <div class="mt-3">
+                        <pre>
+<a href="Servicios">/Servicios </a>
+GET /Servicios 
+Host: https://apitecnoapps.onrender.com/
+
+                        </pre>
+                        <h5>Respuesta:</h5>
+                        <pre>
+[
+	{
+		"id": 1,
+		"nombre": "Servicio 1",
+		"descripcion": "Descripción del Servicio 1"
+	},
+	...
+]
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card method-card">
+            <div class="card-header bg-primary text-white">
+                <span>GET /Contacto </span>
+                <span class="badge badge-secondary">GET</span>
+            </div>
+            <div class="card-body">
+                <p>Recuperar una lista de Contacto.</p>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#getContacto" aria-expanded="false" aria-controls="getContacto">
+                    Ver Detalle
+                </button>
+                <div class="collapse" id="getContacto">
+                    <div class="mt-3">
+                        <pre>
+<a href="Contacto">/Contacto  </a>
+GET /Contacto  
+Host: https://apitecnoapps.onrender.com/
+
+                        </pre>
+                        <h5>Respuesta:</h5>
+                        <pre>
+[
+	 {
+		"id": 1,
+		"telefono": "123-456-7890",
+		"direccion": "Calle 123, Ciudad",
+		"email": "contactoA@example.com"
+	},
+	...
+]
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Additional methods can be added here following the same structure -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
