@@ -4,6 +4,7 @@
       "id": 1,
       "nombre": "Juan Perez",
       "email": "juan.perez@example.com",
+      "contraseña": "password123",
       "rolId": 1,
       "clienteId": 1
     },
@@ -11,6 +12,7 @@
       "id": 2,
       "nombre": "Maria Gomez",
       "email": "maria.gomez@example.com",
+      "contraseña": "securepassword",
       "rolId": 2,
       "clienteId": 2
     }
