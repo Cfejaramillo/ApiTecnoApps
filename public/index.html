@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Documentation</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .method-card {
+            margin-bottom: 20px;
+        }
+        .method-card .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">API Documentation</h1>
+        <div class="card method-card">
+            <div class="card-header bg-primary text-white">
+                <span>GET /usuarios</span>
+                <span class="badge badge-secondary">GET</span>
+            </div>
+            <div class="card-body">
+                <p>Retrieve a list of users.</p>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#getUsuarios" aria-expanded="false" aria-controls="getUsuarios">
+                    View Details
+                </button>
+                <div class="collapse" id="getUsuarios">
+                    <div class="mt-3">
+                        <pre>
+GET /usuarios
+Host: api.example.com
+Authorization: Bearer &lt;token&gt;
+                        </pre>
+                        <h5>Response:</h5>
+                        <pre>
+[
+    {
+        "id": 1,
+        "nombre": "Juan Perez",
+        "email": "juan.perez@example.com",
+        "rolId": 1,
+        "clienteId": 1
+    },
+    ...
+]
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card method-card">
+            <div class="card-header bg-success text-white">
+                <span>POST /usuarios</span>
+                <span class="badge badge-secondary">POST</span>
+            </div>
+            <div class="card-body">
+                <p>Create a new user.</p>
+                <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#postUsuarios" aria-expanded="false" aria-controls="postUsuarios">
+                    View Details
+                </button>
+                <div class="collapse" id="postUsuarios">
+                    <div class="mt-3">
+                        <pre>
+POST /usuarios
+Host: api.example.com
+Authorization: Bearer &lt;token&gt;
+Content-Type: application/json
+
+{
+    "nombre": "Maria Gomez",
+    "email": "maria.gomez@example.com",
+    "contraseña": "securepassword",
+    "rolId": 2,
+    "clienteId": 2
+}
+                        </pre>
+                        <h5>Response:</h5>
+                        <pre>
+{
+    "id": 2,
+    "nombre": "Maria Gomez",
+    "email": "maria.gomez@example.com",
+    "rolId": 2,
+    "clienteId": 2
+}
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional methods can be added here following the same structure -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
