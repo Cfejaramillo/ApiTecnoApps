@@ -1,13 +1,73 @@
 {
-  "posts": [
-    { "id": "1", "title": "a title", "views": 100 },
-    { "id": "2", "title": "another title", "views": 200 }
+  "Usuarios": [
+    {
+      "id": 1,
+      "nombre": "Juan Perez",
+      "email": "juan.perez@example.com",
+      "rolId": 1,
+      "clienteId": 1
+    },
+    {
+      "id": 2,
+      "nombre": "Maria Gomez",
+      "email": "maria.gomez@example.com",
+      "rolId": 2,
+      "clienteId": 2
+    }
   ],
-  "comments": [
-    { "id": "1", "text": "a comment about post 1", "postId": "1" },
-    { "id": "2", "text": "another comment about post 1", "postId": "1" }
+  "Roles": [
+    {
+      "id": 1,
+      "nombre": "Administrador"
+    },
+    {
+      "id": 2,
+      "nombre": "Usuario"
+    }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "Clientes": [
+    {
+      "id": 1,
+      "nombre": "Cliente A",
+      "servicios": [1, 2],
+      "contactoId": 1
+    },
+    {
+      "id": 2,
+      "nombre": "Cliente B",
+      "servicios": [2, 3],
+      "contactoId": 2
+    }
+  ],
+  "Servicios": [
+    {
+      "id": 1,
+      "nombre": "Servicio 1",
+      "descripcion": "Descripción del Servicio 1"
+    },
+    {
+      "id": 2,
+      "nombre": "Servicio 2",
+      "descripcion": "Descripción del Servicio 2"
+    },
+    {
+      "id": 3,
+      "nombre": "Servicio 3",
+      "descripcion": "Descripción del Servicio 3"
+    }
+  ],
+  "Contacto": [
+    {
+      "id": 1,
+      "telefono": "123-456-7890",
+      "direccion": "Calle 123, Ciudad",
+      "email": "contactoA@example.com"
+    },
+    {
+      "id": 2,
+      "telefono": "987-654-3210",
+      "direccion": "Avenida 456, Ciudad",
+      "email": "contactoB@example.com"
+    }
+  ]
 }
